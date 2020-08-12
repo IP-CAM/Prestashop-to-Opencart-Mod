@@ -11,10 +11,17 @@
 		public function connect ()
 		{
 			$connect = mysqli_connect(
+<<<<<<< HEAD
 				$this->host,
 				$this->user,
 				$this->pass,
 				$this->base
+=======
+				'',
+				'',
+				'',
+				''
+>>>>>>> 56d15c2d8db78a8303089a7b54da01b873d0e380
 			);
 			mysqli_query($connect,"SET NAMES 'utf8'");
 			mysqli_query($connect,"SET character_set_connection=utf8");
