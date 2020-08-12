@@ -1,14 +1,20 @@
 <?php
 	class banco
 	{	
+		public function __construct($host, $user, $pass, $base) {
+			$this->host = $host;
+			$this->user = $user;
+			$this->pass = $pass;
+			$this->base = $base;
+		}
 
 		public function connect ()
 		{
 			$connect = mysqli_connect(
-				'localhost',
-				'rejanedosanjos',
-				'r3j4n3_',
-				'rejanedosanjos'
+				$this->host,
+				$this->user,
+				$this->pass,
+				$this->base
 			);
 			mysqli_query($connect,"SET NAMES 'utf8'");
 			mysqli_query($connect,"SET character_set_connection=utf8");
