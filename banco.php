@@ -5,10 +5,10 @@
 		public function connect ()
 		{
 			$connect = mysqli_connect(
-				'localhost',
-				'rejanedosanjos',
-				'r3j4n3_',
-				'rejanedosanjos'
+				'',
+				'',
+				'',
+				''
 			);
 			mysqli_query($connect,"SET NAMES 'utf8'");
 			mysqli_query($connect,"SET character_set_connection=utf8");
